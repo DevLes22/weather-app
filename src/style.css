@@ -1,0 +1,131 @@
+.container {
+    font-family: Roboto, san-serif;
+    font-size: 25px;
+}
+
+.card-image {
+    height: 600px;
+}
+
+.search-container {
+    background-color: rgb(36, 35, 60, 0.4);
+    border-radius: 4px;
+    color: white;
+    width: 990px;
+    padding: 3px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.search-engine {
+    margin: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    padding: 5px;
+    border-radius: 4px;
+    width: 700px;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#get-location-button {
+    display: block;
+    margin: 0 auto;
+    color: #ffff;
+    background-color: rgb(36, 35, 60, 0.4);
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.night-temperature {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.current-emoji {
+    color: rgb(255, 221, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+.current-temperature {
+    font-size: 40px;
+}
+
+.weekly-forcast-container {
+    text-align: center;
+}
+
+.main-container {
+    background-color: rgb(36, 35, 60, 0.4);
+    border-radius: 4px;
+    color: white;
+    width: 990px;
+    padding: 25px 25px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.parameters {
+    text-align: center;
+    font-size: smaller;
+}
+
+.fa-sun,
+.fa-cloud,
+.fa-cloud-sun {
+    font-size: 40px;
+}
+
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday {
+    background-color: rgb(36, 35, 60, 0.4);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+footer {
+    font-size: 18px;
+    font-family: PT mono;
+    text-align: center;
+    padding: 10px;
+    color: rgb(36, 35, 60, 0.4);
+
+}
