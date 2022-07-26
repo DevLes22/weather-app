@@ -25,7 +25,9 @@ document.querySelector("#current-city").innerHTML = response.data.name;
 document.querySelector("#current-temp").innerHTML = temperature;
 document.querySelector("#current-humidity").innerHTML = response.data.main.humidity;
 document.querySelector("#current-wind").innerHTML = Math.round(response.data.wind.speed);
-document.querySelector("#description").innerHTML = response.data.weather[0].main;
+document.querySelector("#description").innerHTML = response.data.weather[0].description;
+document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
