@@ -22,7 +22,7 @@ locationButton.addEventListener("click", getCurrentLocation);
 function displayWeather(response) {
 let temperature = Math.round(response.data.main.temp);
 document.querySelector("#current-city").innerHTML = response.data.name;
-document.querySelector("#current-temp").innerHTML = `${temperature}°C`;
+document.querySelector("#current-temp").innerHTML = temperature;
 document.querySelector("#current-humidity").innerHTML = response.data.main.humidity;
 document.querySelector("#current-wind").innerHTML = Math.round(response.data.wind.speed);
 document.querySelector("#description").innerHTML = response.data.weather[0].main;

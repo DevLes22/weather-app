@@ -26,12 +26,12 @@
         <img src="images/clouds.jpg" class="card-image" alt="clouds-background" id="card-image" />
         <div class="card-img-overlay">
           <div class="search-container">
-            <button id="get-location-button">Get current location</button>
             <form class="search-engine" id="search-engine-form">
               <input type="text" id = "search-engine-input" placeholder="Enter your city ..." autofocus="on"/>
               <button type="submit" value="none" id="search-button">Search
               </button>
             </form>
+            <button id="get-location-button">Get current location</button>
           </div>
           <div class="main-container">
             <div class="row"> 
@@ -41,6 +41,10 @@
                   </ul>
               </div>
               <div class="col-4 current-temperature" id="current-temp"></div>
+              <span class="units"> 
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
               <div class="col-4 parameters">
                 <ul> 
                   <li id="description"></li>
