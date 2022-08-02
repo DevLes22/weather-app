@@ -126,11 +126,7 @@ text-decoration: none;
     text-transform: capitalize;
 }
 
-.monday,
-.tuesday,
-.wednesday,
-.thursday,
-.friday {
+.weather-forecast-date {
     background-color: rgb(36, 35, 60, 0.4);
     padding: 10px;
     margin: 10px;
