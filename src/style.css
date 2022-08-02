@@ -104,10 +104,6 @@ text-decoration: none;
     left: 20px;
     top: -20px;
 }
-.weekly-forcast-container {
-    text-align: center;
-}
-
 .main-container {
     background-color: rgb(36, 35, 60, 0.4);
     border-radius: 4px;

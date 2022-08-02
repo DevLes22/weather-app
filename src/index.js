@@ -5,6 +5,30 @@ let day = days[now.getDay()];
 let time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 today.innerHTML = `${day} ${time}`;
 
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+
+let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+let forecastHTML = `<div class="row">`;
+days.forEach(function(day) {
+forecastHTML = forecastHTML + `
+<div class="col weather-forecast-date">${day}<div class="row">
+ <div class="col-12">
+ <i class="fa-solid fa-sun"></i>
+ </div>
+ <div class="col-12 weather-forecast-temperature">
+<span class="day-temperature">27°C</span>
+<span class="night-temperature">/17°C</span>
+</div>
+</div>
+</div>
+`;
+})
+forecastHTML = forecastHTML + `</div>`;
+
+forecastElement.innerHTML = forecastHTML;
+}
 
 function showLocation(position) {
   let apiKey = "4e3399058fb83764b1a548f8be443cf5";
@@ -26,6 +50,7 @@ document.querySelector("#current-wind").innerHTML = Math.round(response.data.win
 document.querySelector("#description").innerHTML = response.data.weather[0].description;
 document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
+
 }
 
 function search(city) {
@@ -74,3 +99,6 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
+
+displayForecast();
+
